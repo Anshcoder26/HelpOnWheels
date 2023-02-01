@@ -16,15 +16,16 @@ nav{
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 13px 35px;
+    padding: 12px 35px;
     margin: 10px;
     font-size: 18px;
     font-weight: 500;
     color: #777;
     cursor: pointer;
-    position: relative;
+   position: relative;
     z-index: 2;
     margin-top: -30px;
+    margin-left: 0%;
     }
     nav ul li::after{
         content: '';
