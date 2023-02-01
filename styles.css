@@ -3,7 +3,7 @@ body{
 }
 img{
     float: left;
-    margin-left: 0%;
+    margin-left: -10px;
 }
 
 nav{
