@@ -128,3 +128,24 @@ a{
     border: 2px solid #F55050;
     border-radius: 1px;
 }
+.buttont {
+    padding: 0px 90px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #31c5fe;
+    border: none;
+    border-radius: 9px;
+  }
+  
+  .buttont:hover 
+  {
+    background-color: #F48484;
+  }
+  
+  .buttont:active {
+    background-color: #F48484;
+    transform: translateY(4px);
+}
