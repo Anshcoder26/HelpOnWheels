@@ -18,6 +18,152 @@
           </ul>
         </nav>
       </div>
-    </div>      
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  <style media="screen">
+  * {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+body {
+height: 10px;
+}
+.wrapper {
+position: absolute;
+width: 80vw;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+display: flex;
+justify-content: space-around;
+gap: 10px;
+}
+.container {
+width: 28vmin;
+height: 28vmin;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 1em 0;
+position: relative;
+font-size: 16px;
+border-radius: 0.5em;
+   backdrop-filter: blur(10px);
+
+box-shadow: -1px -1px 4px #aaa9a9a2,
+              1px 1px 7px rgba(147, 149, 151, 0.671);
+}
+img {
+  margin-top: -50px;
+  align-content: center;
+  align-self: center;
+}
+span.num {
+color: #020202;
+display: grid;
+place-items: center;
+font-weight: 600;
+font-size: 3em;
+margin-top: -25px;
+}
+span.text {
+color: #000000;
+font-size: 1em;
+text-align: center;
+pad: 0.7em 0;
+font-weight: 400;
+line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+.wrapper {
+  width: 85vw;
+}
+.container {
+  height: 26vmin;
+  width: 26vmin;
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 768px) {
+.wrapper {
+  width: 90vw;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.container {
+  width: calc(50% - 40px);
+  height: 30vmin;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+}
+@media screen and (max-width: 480px) {
+.wrapper {
+  gap: 15px;
+}
+.container {
+  width: 100%;
+  height: 25vmin;
+  font-size: 8px;
+  margin-bottom: 25px;
+}
+}
+  </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="counter/doc.png" width="200" height="200">
+        <span class="num" data-val="365">000</span>
+        <span class="text">Medical Staffs Alloted</span>
+      </div>
+
+      <div class="container">
+        <img src="counter/ppl.png" width="200" height="200">
+        <span class="num" data-val="290">000</span>
+        <span class="text">People Saved</span>
+      </div>
+
+      <div class="container">
+        <img src="counter/hospit.png" width="200" height="200">
+        <span class="num" data-val="219">000</span>
+        <span class="text">Total Hospital we server</span>
+      </div>
+
+      <div class="container">
+        <img src="counter/ambul.png" width="200" height="200">
+        <span class="num" data-val="140">000</span>
+        <span class="text">Total Ambulances</span>
+      </div>
+    </div>
+    <!-- Script -->
+  <script type="text/javascript">
+  let valueDisplays = document.querySelectorAll(".num");
+  let interval = 4000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
+  </script>
+  </body>
   </body>
 </html>
