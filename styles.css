@@ -3,7 +3,7 @@ body{
 }
 img{
     float: left;
-    margin-left: -10px;
+    margin-left: 0%;
 }
 
 nav{
@@ -11,21 +11,18 @@ nav{
     background: #fff;
     border-radius: 50px; padding: 10px; 
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    height: 60px;
 }
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 12px 35px;
-    margin: 10px;
+    padding: 13px 35px;
+    margin: 20px;
     font-size: 18px;
     font-weight: 500;
     color: #777;
     cursor: pointer;
-   position: relative;
+    position: relative;
     z-index: 2;
-    margin-top: -30px;
-    margin-left: 0%;
     }
     nav ul li::after{
         content: '';
@@ -128,24 +125,91 @@ a{
     border: 2px solid #F55050;
     border-radius: 1px;
 }
-.buttont {
-    padding: 0px 90px;
-    font-size: 10px;
+/*Counter cc*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    .wrapperctr {
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    }
+    .containerctr {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+       backdrop-filter: blur(10px);
+    
+    box-shadow: -1px -1px 4px #aaa9a9a2,
+                  1px 1px 7px rgba(147, 149, 151, 0.671);
+    }
+    .imgctr {
+      margin-top: -40px;
+      align-content: center;
+      align-self: center;
+    }
+    span.num {
+    color: #020202;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+    margin-top: -25px;
+    }
+    span.text {
+    color: #000000;
+    font-size: 1em;
     text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #31c5fe;
-    border: none;
-    border-radius: 9px;
-  }
-  
-  .buttont:hover 
-  {
-    background-color: #F48484;
-  }
-  
-  .buttont:active {
-    background-color: #F48484;
-    transform: translateY(4px);
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+    }
+    @media screen and (max-width: 1024px) {
+    .wrapperctr {
+      width: 85vw;
+    }
+    .containerctr {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+    }
+    @media screen and (max-width: 768px) {
+    .wrapperctr {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .containerctr {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+    }
+    @media screen and (max-width: 480px) {
+    .wrapperctr {
+      gap: 15px;
+    }
+    .containerctr {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+      margin-bottom: 25px;
+    }
 }
+/*counter css end */
