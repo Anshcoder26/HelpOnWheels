@@ -19,5 +19,61 @@
         </nav>
       </div>
     </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+ 
+  </head>
+  <body>
+    <div class="wrapperctr">
+      <div class="containerctr">
+        <img src="counter/doc.png" width="200" height="200" class="imgctr">
+        <span class="num" data-val="365">000</span>
+        <span class="text">Medical Staffs Alloted</span>
+      </div>
+
+      <div class="containerctr">
+        <img src="counter/ppl.png" width="200" height="200" class="imgctr">
+        <span class="num" data-val="290">000</span>
+        <span class="text">People Saved</span>
+      </div>
+
+      <div class="containerctr">
+        <img src="counter/hospit.png" width="200" height="200" class="imgctr">
+        <span class="num" data-val="219">000</span>
+        <span class="text">Total Hospital we server</span>
+      </div>
+
+      <div class="containerctr">
+        <img src="counter/ambul.png" width="200" height="200" class="imgctr">
+        <span class="num" data-val="140">000</span>
+        <span class="text">Total Ambulances</span>
+      </div>
+    </div>
+    <!-- Script -->
+  <script type="text/javascript">
+  let valueDisplays = document.querySelectorAll(".num");
+  let interval = 4000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
+  </script>
+  </body>
   </body>
 </html>
