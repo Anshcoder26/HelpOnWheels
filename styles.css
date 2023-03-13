@@ -11,12 +11,13 @@ nav{
     background: #fff;
     border-radius: 50px; padding: 10px; 
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    height: 60px;
 }
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding: 13px 35px;
-    margin: 20px;
+    padding: 12px 35px;
+    margin: 10px;
     font-size: 18px;
     font-weight: 500;
     color: #777;
@@ -124,6 +125,27 @@ a{
     height: 2px;
     border: 2px solid #F55050;
     border-radius: 1px;
+}
+.buttont {
+    padding: 0px 90px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #31c5fe;
+    border: none;
+    border-radius: 9px;
+  }
+
+  .buttont:hover 
+  {
+    background-color: #F48484;
+  }
+
+  .buttont:active {
+    background-color: #F48484;
+    transform: translateY(4px);
 }
 /*Counter cc*/
 * {
