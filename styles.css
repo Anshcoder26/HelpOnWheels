@@ -24,6 +24,8 @@ nav ul li{
     cursor: pointer;
     position: relative;
     z-index: 2;
+    margin-top: -30px;
+    margin-left: 0%;
     }
     nav ul li::after{
         content: '';
