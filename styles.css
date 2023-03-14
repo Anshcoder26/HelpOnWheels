@@ -3,7 +3,7 @@ body{
 }
 img{
     float: left;
-    margin-left: 0%;
+    margin-left: -10px;
 }
 
 nav{
@@ -22,7 +22,7 @@ nav ul li{
     font-weight: 500;
     color: #777;
     cursor: pointer;
-    position: relative;
+   position: relative;
     z-index: 2;
     margin-top: -30px;
     margin-left: 0%;
@@ -139,12 +139,12 @@ a{
     border: none;
     border-radius: 9px;
   }
-
+  
   .buttont:hover 
   {
     background-color: #F48484;
   }
-
+  
   .buttont:active {
     background-color: #F48484;
     transform: translateY(4px);
