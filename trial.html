@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Display navigation directions</title>
+<title>Add your location</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
@@ -25,7 +25,7 @@ const map = new mapboxgl.Map({
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
 style: 'mapbox://styles/mapbox/streets-v12',
-center: [-79.4512, 43.6568],
+center: [80.04342,12.82375],
 zoom: 13
 });
  
@@ -33,7 +33,7 @@ map.addControl(
 new MapboxDirections({
 accessToken: mapboxgl.accessToken
 }),
-'top-left'
+'bottom-left'
 );
 </script>
  
