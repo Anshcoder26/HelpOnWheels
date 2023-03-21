@@ -149,3 +149,31 @@ a{
     background-color: #F48484;
     transform: translateY(4px);
 }
+
+/*about section */
+
+
+.aboutmain {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.aboutus {
+  font-size: 46px;
+  color: #F55050;
+  margin-bottom: 20px;
+}
+
+.ab {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.aboutfooter {
+  background-color: #F48484;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/*about ends here */
