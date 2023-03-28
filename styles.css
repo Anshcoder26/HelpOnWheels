@@ -195,6 +195,7 @@ a{
   
   .contactdes{
     font-size: 21px;
+    text-align: center;
   }
   .contact-options {
     display: flex;
