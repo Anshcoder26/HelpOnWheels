@@ -283,3 +283,9 @@ a{
     border: 2px
   }
 /*contact ends here */
+#hr2{
+  width: 50px;
+  height: 2px;
+  border: 2px solid #ff6b6b;
+  border-radius: 1px;
+}
