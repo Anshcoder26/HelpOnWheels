@@ -1,195 +1,195 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 img{
-    float: left;
-    margin-left: -10px;
+  float: left;
+  margin-left: -10px;
 }
 
 nav{
-    background: #ffbdc9;
-    background: #fff;
-    border-radius: 50px; padding: 10px; 
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    height: 60px;
+  background: #ffbdc9;
+  background: #fff;
+  border-radius: 50px; padding: 10px; 
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+  height: 60px;
 }
 nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 12px 35px;
-    margin: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #777;
-    cursor: pointer;
-   position: relative;
-    z-index: 2;
-    margin-top: -30px;
-    margin-left: 0%;
-    }
-    nav ul li::after{
-        content: '';
-        background: #f44566;
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-        opacity: 0;
-        transition: top 0.5s, opacity 0.5s;
-        }
-        nav ul li:hover{
-            color: #fff;
-            }
-            nav ul li:hover::after{ opacity: 1;
-            top: 50%;
-            }
+  list-style: none;
+  display: inline-block;
+  padding: 12px 35px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+ position: relative;
+  z-index: 2;
+  margin-top: -30px;
+  margin-left: 0%;
+  }
+  nav ul li::after{
+      content: '';
+      background: #f44566;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+      }
+      nav ul li:hover{
+          color: #fff;
+          }
+          nav ul li:hover::after{ opacity: 1;
+          top: 50%;
+          }
 a{
-    color: black;
+  color: black;
 }
 #h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: #F55050; 
-    line-height: 70%; 
-    border-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #F55050; 
+  line-height: 70%; 
+  border-color: black;
 }
 #h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: #F48484; 
-    line-height: 70%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #F48484; 
+  line-height: 70%;
 }
 .button {
-    padding: 10px 40px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #F48484;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #666;
-  }
-  
-  .button:hover 
-  {
-    background-color: #666;
-  }
-  
-  .button:active {
-    background-color: #666;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  padding: 10px 40px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #F48484;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #666;
+}
+
+.button:hover 
+{
+  background-color: #666;
+}
+
+.button:active {
+  background-color: #666;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 #myimg{
-    float:left;
+  float:left;
 }
 #myp{
-    font-family: Segoe UI;
+  font-family: Segoe UI;
 }
 #mylink{
-    color:white;
+  color:white;
 }
 #mybody{
-    background-color:#2c3c6c;
+  background-color:#2c3c6c;
 }
 #mybody2{
-    background-color: #d3bbdb;
+  background-color: #d3bbdb;
 }
 #h7{
-    color:black;
+  color:black;
 }
 #mybody2{
-    background-color: #d3bbdb;
+  background-color: #d3bbdb;
 }
 #mybody3{
-    background-color: white;
+  background-color: white;
 }
 #white{
-    color: black;
+  color: black;
 }
 #h72
 {
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #myp2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    color:  #31c5fe;  
-    border-color: black;
-    font-size: larger;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  color:  #31c5fe;  
+  border-color: black;
+  font-size: larger;
 }
 #hr{
-    width: 100px;
-    height: 2px;
-    border: 2px solid #F55050;
-    border-radius: 1px;
+  width: 100px;
+  height: 2px;
+  border: 2px solid #F55050;
+  border-radius: 1px;
 }
 .buttont {
-    padding: 0px 90px;
-    font-size: 10px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #31c5fe;
-    border: none;
-    border-radius: 9px;
-  }
-  
-  .buttont:hover 
-  {
-    background-color: #F48484;
-  }
-  
-  .buttont:active {
-    background-color: #F48484;
-    transform: translateY(4px);
+  padding: 0px 90px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #31c5fe;
+  border: none;
+  border-radius: 9px;
+}
+
+.buttont:hover 
+{
+  background-color: #F48484;
+}
+
+.buttont:active {
+  background-color: #F48484;
+  transform: translateY(4px);
 }
 /*animation of ambulance */
-    .surface{
-        height:300px;
-        width:130%;
-        display:block;
-        position:relative;
-        bottom:50px;
-        left:-600px;
-        background: url('./animation_service/surface.png');
-        background-repeat: repeat-x;
-        overflow: hidden;
-        z-index:-1;
-        animation : moveRight 10s linear infinite;
-    }
-    .cycle{
-        position: absolute;
-        top:175px;
-        left:2%;
-        width:10%;
-        z-index:-1;
-        animation : moveCycle 10s linear infinite;
-    }
-    .bus{
-        position: absolute;
-        top:260px;
-        left:100%;
-        width:8%;
-        z-index:0;
-        animation: suspension 2s linear infinite,moveBus 12s linear infinite;
-    }
+  .surface{
+      height:300px;
+      width:130%;
+      display:block;
+      position:relative;
+      bottom:50px;
+      left:-600px;
+      background: url('./animation_service/surface.png');
+      background-repeat: repeat-x;
+      overflow: hidden;
+      z-index:-1;
+      animation : moveRight 10s linear infinite;
+  }
+  .cycle{
+      position: absolute;
+      top:175px;
+      left:2%;
+      width:10%;
+      z-index:-1;
+      animation : moveCycle 10s linear infinite;
+  }
+  .bus{
+      position: absolute;
+      top:260px;
+      left:100%;
+      width:8%;
+      z-index:0;
+      animation: suspension 2s linear infinite,moveBus 12s linear infinite;
+  }
 
-    @keyframes moveRight{ 100% {transform: none;}}
-    @keyframes moveCycle{ 100% {transform : translateX(2000px)}}
-    @keyframes moveBus{ 100% {transform : translateX(-2200px)}}
+  @keyframes moveRight{ 100% {transform: none;}}
+  @keyframes moveCycle{ 100% {transform : translateX(2000px)}}
+  @keyframes moveBus{ 100% {transform : translateX(-2200px)}}
 
-    @keyframes suspension { 
-        100% { transform: translateY(-1px)}
-        50% { transform: translateY(1px)}
-        25% { transform: translateY(-1px)}
+  @keyframes suspension { 
+      100% { transform: translateY(-1px)}
+      50% { transform: translateY(1px)}
+      25% { transform: translateY(-1px)}
 
-    }
+  }
 /*animation ends here */
 /*ambulance*/
 .project{
@@ -285,57 +285,70 @@ a{
 }
 /*End*/
 /*Counter cc*/
+.counter-heading{
+  margin-top: 0px;
+  font-size: 100px;
+  background: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  color: #F48484;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 8px transparent; 
+}
 .counter {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    }
-    .wrapperctr {
-    position: absolute;
-    width: 80vw;
-    transform: translate(-50%, -50%);
-    top: 60%;
-    left: 50%;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    }
-    .containerctr {
-    width: 28vmin;
-    height: 28vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1em 0;
-    position: relative;
-    font-size: 16px;
-    border-radius: 0.5em;
-       backdrop-filter: blur(10px);
-    
-    box-shadow: -1px -1px 4px #aaa9a9a2,
-                  1px 1px 7px rgba(147, 149, 151, 0.671);
-    }
-    .imgctr {
-      margin-top: -40px;
-      align-content: center;
-      align-self: center;
-    }
-    span.num {
-    color: #020202;
-    display: grid;
-    place-items: center;
-    font-weight: 600;
-    font-size: 3em;
-    margin-top: -25px;
-    }
-    span.text {
-    color: #000000;
-    font-size: 1em;
-    text-align: center;
-    pad: 0.7em 0;
-    font-weight: 400;
-    line-height: 0;
-    }
-    
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  }
+  .wrapperctr {
+  position: absolute;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  top: 250%;
+  bottom: -200%;;
+  left: 45%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  }
+  .containerctr {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+     backdrop-filter: blur(10px);
+  
+  box-shadow: -1px -1px 4px #aaa9a9a2,
+                1px 1px 7px rgba(147, 149, 151, 0.671);
+  }
+  .imgctr {
+    margin-top: -40px;
+    align-content: center;
+    align-self: center;
+  }
+  span.num {
+  color: #020202;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+  margin-top: -25px;
+  }
+  span.text {
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+  }
+  
 /*counter css end */
 /* Footer Start */
 .ab {
@@ -352,36 +365,36 @@ a{
 }
 /* Footer ends */
 @media screen and (max-width: 1024px) {
-    .wrapperctr {
-      width: 85vw;
-    }
-    .containerctr {
-      height: 26vmin;
-      width: 26vmin;
-      font-size: 12px;
-    }
-    }
-    @media screen and (max-width: 768px) {
-    .wrapperctr {
-      width: 90vw;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .containerctr {
-      width: calc(50% - 40px);
-      height: 30vmin;
-      margin-bottom: 25px;
-      font-size: 14px;
-    }
-    }
-    @media screen and (max-width: 480px) {
-    .wrapperctr {
-      gap: 15px;
-    }
-    .containerctr {
-      width: 100%;
-      height: 25vmin;
-      font-size: 8px;
-      margin-bottom: 25px;
-    }
+  .wrapperctr {
+    width: 85vw;
+  }
+  .containerctr {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+  .wrapperctr {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .containerctr {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  }
+  @media screen and (max-width: 480px) {
+  .wrapperctr {
+    gap: 15px;
+  }
+  .containerctr {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+    margin-bottom: 25px;
+  }
 }
