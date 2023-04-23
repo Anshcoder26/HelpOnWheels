@@ -191,6 +191,99 @@ a{
 
     }
 /*animation ends here */
+/*ambulance*/
+.project{
+  display: grid;
+  grid-gap: 100px;
+}
+.project-heading{
+  font-size: 150px;
+  background: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #F48484;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+}
+
+.project-container{
+  position:relative;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  bottom:-100%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+.project-card{
+  height: 600px;
+  width: 900px;
+  position: relative;
+  display: flex;
+}
+
+.project-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.project-content{
+  position: relative;
+  padding: 40px;
+  color: #000000;
+  transition: .5s;
+  opacity: 0;
+  font-style: oblique;
+}
+
+.project-title{
+  font-size: 50px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 300;
+}
+
+.project-info{
+  margin: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.project-btn-grp{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.project-btn{
+  height: 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border: none;
+  background: #F48484;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-card:hover .project-img{
+  filter: blur(20px);
+}
+
+.project-card:hover .project-content{
+  opacity: 1;
+}
+/*End*/
 /*Counter cc*/
 .counter {
     box-sizing: border-box;
@@ -244,6 +337,20 @@ a{
     }
     
 /*counter css end */
+/* Footer Start */
+.ab {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.Servicefooter {
+  margin-top: 30%;
+  background-color: #F48484;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/* Footer ends */
 @media screen and (max-width: 1024px) {
     .wrapperctr {
       width: 85vw;
