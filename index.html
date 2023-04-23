@@ -44,5 +44,42 @@
       </div>
     
   </div>
+        <!-- videocard -->
+      <div class="video-card-container">
+        <div class="video-card">
+            <img src="ambulance_pics/ALS.jpg" alt="" class="video-card-image">
+            <video src="ambulance_pics/BLS.jpg" muted loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="ambulance_pics/ALS.jpg" alt="" class="video-card-image">
+            <video src="ambulance_pics/BLS.jpg" muted loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="ambulance_pics/ALS.jpg" alt="" class="video-card-image">
+            <video src="ambulance_pics/BLS.jpg" muted loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="ambulance_pics/ALS.jpg" alt="" class="video-card-image">
+            <video src="ambulance_pics/BLS.jpg muted loop class="card-video"></video>
+        </div>
+        <div class="video-card">
+            <img src="ambulance_pics/ALS.jpg" alt="" class="video-card-image">
+            <video src="ambulance_pics/BLS.jpg" muted loop class="card-video"></video>
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    const videoCards = [...document.querySelectorAll('.video-card')];
+videoCards.forEach(item =>{
+    item.addEventListener('mouseover',()=>{
+        let video = item.children[1];
+        video.play();
+    });
+    item.addEventListener('mouseleave',()=>{
+        let video=item.children[1];
+        video.pause();
+    });
+});
+  </script>
 </body>
 </html>
