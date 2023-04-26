@@ -25,6 +25,16 @@ function submitForm(e){
     var hospital = getElementVal('hospital');
 
     saveMessages(phone, name, location, hospital);
+
+    //enable alert
+    document.querySelector('.alert').style.display = 'block';
+    //remove the alert
+    setTimeout(() => {
+        document.querySelector('.alert').style.display = 'none';  
+    }, 3000);
+
+    //reset the form
+    document.getElementById('Bookingform').reset()
 }
 
 
