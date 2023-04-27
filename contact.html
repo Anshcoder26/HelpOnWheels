@@ -10,7 +10,7 @@
     <div>
         <div class="container">
             <nav>
-              <a href="index.html"><img src="am2.png" alt="Smiley face" width="275" height="57"></a>
+        <img src="am2.png" alt="Smiley face" width="275" height="57">
           <ul>
             <a href="about.html"><li style="margin-left:27.5%;">About</li></a>
             <a href="services.html"><li>Services</li></a>
@@ -33,17 +33,21 @@
             <div class="contact-option">
               <i class="fa fa-envelope"></i>
               <h4>Email</h4>
-              <p>infohelponwheels@gmail.com</p>
+              <p>info@ambulancebooking.com</p>
             </div>
           </div>
-          <form action="mailto:infohelponwheels@gmail.com">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" onclick="alert('Your message has been sent')" class="form-submit-btn">Send Message</button>
+          <form id="contactForm">
+            <div style="transform: translateX(28%);" class="alert">Message Sent!!</div><br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message"  required></textarea>
+            <button type="submit" class="form-submit-btn">Send Message</button>
           </form>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+          <script src="contact.js"></script>
         </div>
       </section>
+
+    
 </body>
 </html>
-
