@@ -23,8 +23,8 @@ function submitForm(e){
     var name = getElementVal('name');
     var location = getElementVal('location');
     var hospital = getElementVal('hospital');
-
-    saveMessages(phone, name, location, hospital);
+    var ambu = getElementVal('ambu');
+    saveMessages(phone, name, location, hospital, ambu);
 
     //enable alert
     document.querySelector('.alert').style.display = 'block';
@@ -38,7 +38,7 @@ function submitForm(e){
 }
 
 
-const saveMessages = (phone, name, location, hospital ) => {
+const saveMessages = (phone, name, location, hospital,ambu) => {
     var newBookingdb = Bookingdb.push();
 
     newBookingdb.set({
@@ -46,6 +46,7 @@ const saveMessages = (phone, name, location, hospital ) => {
         name : name,
         location : location,
         hospital : hospital,
+        ambulance : ambu,
     })
 };
 
