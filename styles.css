@@ -72,6 +72,7 @@ a{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #666;
+    margin-left: 60px;
   }
   
   .button:hover 
